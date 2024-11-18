@@ -14,7 +14,7 @@ def get_product(request):
 
 
 @api_view(['GET'])
-def get_single_product(request,id):  # sourcery skip: do-not-use-bare-except
+def get_single_product(request,id):      
     try:
         product = Product.objects.get(id=id)
         serializer = ProductSerializers(product)
