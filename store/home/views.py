@@ -41,7 +41,4 @@ def delete_product(request,id):
         product.delete()
         return Response({"msg":"product deleted"}, status=status.HTTP_200_OK)
     except :
-        return Response({"msg":"product not found"}, status=status.HTTP_404_NOT_FOUND)
-
-
-
+        return Response({"msg":"product not found"}, status=404)
