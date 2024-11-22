@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from  home.models import Product
 from home.serializer import ProductSerializers
 from rest_framework import status
-# Create your views here.
 
 
 @api_view(['GET'])
