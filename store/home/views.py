@@ -36,5 +36,5 @@ def delete_product(request,id):
         product = Product.objects.get(id=id)
         product.delete()
         return Response({"msg":"product deleted"}, status=status.HTTP_200_OK)
-    except :
+    except:
         return Response({"msg":"product not found"}, status=404)
