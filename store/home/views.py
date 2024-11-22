@@ -21,9 +21,6 @@ def get_single_product(request,id):
     except:
         return Response({'message':'product not found'},status=status.HTTP_404_NOT_FOUND)
 
-
-
-
 @api_view(['POST'])
 def save_product(request):
     serializer = ProductSerializers(data=request.data)
